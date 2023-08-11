@@ -42,16 +42,23 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Flutter2'),
+        title: const Text('Sample App'),
       ),
       body: ListView(children: const [
         ListTile(
           leading: Icon(Icons.key),
           title: Text('Amazon'),
         ),
+        // 線を表示する
+        Divider(thickness: 2, color: Colors.red, height: 0),
         ListTile(
           leading: Icon(Icons.key),
           title: Text('楽天'),
+        ),
+        Divider(
+          thickness: 2,
+          color: Colors.red,
+          height: 0,
         ),
         ListTile(
           leading: Icon(Icons.key),
