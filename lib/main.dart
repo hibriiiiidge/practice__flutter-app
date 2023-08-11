@@ -44,14 +44,20 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('Flutter2'),
       ),
-      body: ListView(
-        children: const [
-          Text('Flutter2'),
-          Text('Flutter3'),
-          Text('Flutter4'),
-          Text('Flutter5'),
-        ]
-      ),
+      body: ListView(children: const [
+        ListTile(
+          leading: Icon(Icons.key),
+          title: Text('Amazon'),
+        ),
+        ListTile(
+          leading: Icon(Icons.key),
+          title: Text('楽天'),
+        ),
+        ListTile(
+          leading: Icon(Icons.key),
+          title: Text('Yahoo!'),
+        ),
+      ]),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
